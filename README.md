@@ -261,7 +261,26 @@ Visual consistency is enforced through a centralized Tailwind CSS v4 design toke
 
 ---
 
-## 🏆 VII. The Portfolio: Deployed Sovereign Engines
+## ⚙️ VII. Sovereign Business & Telemetry Engines (Backend Services)
+
+The monorepo contains complex, background-running business services that automate media footprint management and productivity telemetry:
+
+### 1. Cross-Platform Social Publishing & Analytics Engine (`src/lib/social/`)
+A fully modular, automated engine that scales marketing footprint and collects distribution metrics:
+- **API Clients Integration**: Built-in clients for Meta (Instagram, Facebook, Threads), Bluesky, Medium, and Twitter/X APIs.
+- **Media Pre-Processing (`content-formatter.ts`)**: Automatic image scaling, dynamic watermarking, and aspect-ratio padding to accommodate native requirements across platforms.
+- **Scheduler & Queue**: Implements an edge-scheduled queue that fetches assets from a Vercel Postgres DB, executes container uploads, and records platform response endpoints.
+- **Analytics Accumulator**: Automatically polls likes, engagement rates, impressions, and saves on active posts, storing them into Postgres via Prisma schema indexes to map causal marketing links.
+
+### 2. Bayesian Protocol Workspace & Vector Ledger (`src/projects/nicholasmacaskill/app/actions/protocol.ts`)
+The private planner where daily checklist states and logs are captured:
+- **Vector Embeddings**: Computes local embeddings (`embedding Float[]`) on notes to enable semantic lookup and associative search.
+- **Selective Syncing Gates**: Interactive checklist status cards (`protocol-checklist.tsx`) feature explicit visibility switches (`toggleProtocolNotePublic`), letting the operator choose which workspace logs push dynamically to the public viewport.
+- **Dynamic Optimization Scoring**: Measures day-over-day task clearance, momentum indexes, and biophysical drawing scores.
+
+---
+
+## 🏆 VIII. The Portfolio: Deployed Sovereign Engines
 
 This monorepo serves as the backend intelligence and frontend display for several highly successful, autonomous engines:
 
@@ -288,7 +307,7 @@ This monorepo serves as the backend intelligence and frontend display for severa
 
 ---
 
-## ⚙️ VIII. Developer Initialization
+## ⚙️ IX. Developer Initialization
 
 1. **Install Dependencies**: 
    ```bash
@@ -310,7 +329,7 @@ This monorepo serves as the backend intelligence and frontend display for severa
 
 ---
 
-## 🔒 IX. OPSEC & Compliance Protocol
+## 🔒 X. OPSEC & Compliance Protocol
 
 **Warning: PRIVATE REPOSITORY**
 - Internal automations (`social/`, `cron/`, `strategies/`, `data/`) contain proprietary execution logic and alpha. **DO NOT LEAK**.
