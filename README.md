@@ -119,14 +119,18 @@ export default function ObservatoryClient() {
 }
 ```
 
-### Engineering Shards & The Knowledge Base (`EntityData.ts`)
-The architecture treats knowledge as modular "shards" rather than static pages. Data is structurally typed and mapped through recursive routing (`/philosophy/[slug]`), allowing existential principles and engineering concepts to be queried and interconnected dynamically as a living knowledge base.
+### Engineering Shards (`case-studies/page.tsx`)
+The architecture maps its core engineering achievements as modular, granular "shards" that act as the structural ledger of our workspace. On the Case Studies page, the **Software as Glass Monorepo** project exposes these distinct technical shards:
 
-Key structural shards in Flocano include:
-- `orchestration`: Active-state agent swarms that operate with wide-spectrum autonomy.
-- `automation`: Invisible cognitions that remove the 80-tool tax, collapsing multi-step processes.
-- `verithra`: Proving Sharpe/PnL off-chain via Aztec Noir zk-circuits prior to liquidity release.
-- `rapid-refraction`: Our 48-hour sprint framework designed to liquidate legacy business friction.
+- **`sag-monorepo` (Hardened Local-First Dev Workspace)**: Uses Turborepo caching hash checks and lock-free layouts to minimize compile redundancy and workspace start latency under 200ms.
+- **`sag-tooling` (Dev Swarm Orchestration Tooling)**: Utilizes multi-agent manager-worker parallel orchestration to automate styling compiles and tests.
+- **`sag-spoke-domain-routing` (Spoke Domain & Path Routing)**: A middleware-driven router executing host-header checks at the edge, injecting the `x-active-project` header to dynamically switch layout themes.
+- **`sag-cross-project-nav` (Cross-Project Navigation Normalization)**: Normalizes client-side path prefixes and maps unified theme classes (`flocano-theme`, `memoirs-theme`) to force global footer/nav synchronization across hostname transitions.
+- **`sag-identity-disambiguation` (Semantic Identity & AEO Control)**: Implements dynamic JSON-LD injection, crawler exclusions (via custom `ai.txt` and `llms.txt`), and `data-nosnippet` boundary gating to protect public search snippet outputs from terminal UI fragments.
+- **`memoirs-banner-intent` (Stacked Marquee Observability Layer)**: Drives nine parallel scrolling marquee bands on the Memoirs home page, isolating crypto/sports WebSockets to prevent slow upstream APIs from freezing UI render.
+- **`memoirs-polymarket-feed` (Polymarket Gamma & Activity Feed Resolver)**: Isolates moneyline contracts from Polymarket's Gamma sports feeds, implementing authenticated CLOB routing with automated public activity fallbacks.
+- **`memoirs-tiered-stats-cache` (Tiered Stats Cache & Fast Route)**: Splits sports stats from live odds payloads using a fast stats route, caching PnL calculations for 300 seconds using in-flight promise deduplication.
+- **`memoirs-client-polling` (Client Polling & Stale-State Merge)**: A dual-fetch loop syncing stats at 10-second intervals while merging and preserving last-known bookmaker odds if slower routes time out.
 
 ---
 
@@ -135,12 +139,10 @@ Key structural shards in Flocano include:
 The Memoirs project (`memoirsofamultidisciplinary.com`) serves as the artistic and philosophical mirror to the hard engineering of the repo.
 
 ### Music & Code Telemetry (`MusicCodeBanner.tsx`)
-Rather than static portfolios, Memoirs integrates live environmental and creative data feeds directly into the UI header:
-```typescript
-// src/projects/memoirs/components/MusicCodeBanner.tsx
-// Integrates live browser and code telemetry (drawdowns, active file paths, Tone.js synthesis)
-// to bridge biological and artistic streams in real-time.
-```
+Rather than static portfolios, Memoirs integrates live environmental, creative, and financial data feeds directly into the UI header:
+- **Real-Time Trading Data Feed**: Initiates a background WebSocket connection directly to Coinbase (`wss://ws-feed.exchange.coinbase.com`), streaming real-time price updates for high-signal assets (BTC-USD, ETH-USD, SOL-USD). This is paired with a 10-second polling sequence querying the internal `/memoirs/api/market` router to fetch macro indicators (NDX, SPX, US10Y) to monitor the global financial state.
+- **Sports Arbitrage & Odds Data Feed**: Hydrates baseball performance parameters dynamically. Polls `/memoirs/api/sports/odds` to display upcoming MLB moneyline markets filtered from Polymarket's Gamma endpoint. Simultaneously queries `/memoirs/api/sports/stats` to aggregate on-chain USDC.e volumes, cumulative ROI, and win-rate ratios computed via Gnosis Safe proxy addresses.
+- **Generative Audio Synthesis (Tone.js)**: Feeds this live price velocity into a client-side synthesizer using Tone.js, translating market movements and scroll parameters into dynamic ambient audio keynotes (chords/LPF cutoff modifiers).
 
 ### Interactive Cognitive Tools
 - `<SocialOrbit />`: Visualizes the mathematical geometry of human alignment and social resonance.
