@@ -129,12 +129,6 @@ A cornerstone of the monorepo's positioning is **Engineering as Marketing**—tr
    ```
    Exposes relative times (`10m ago`, `3d ago`), short commit hashes, and direct link-outs to GitHub commits, proving real-time engineering iterations on each specific venture.
 
-### The Taste Layer Page (`/flocanolabs/taste`)
-The "Taste Index" (curated via `/flocanolabs/taste` and `/flocanolabs/taste/[venue]`) is an interactive, highly stylistic visual temple designed to represent the studio’s sensory architecture:
-- **Atmospheric Visuals**: Built using a dynamic mix of custom grainy film overlays (`noise.svg` at 7% opacity), floating spotlight vectors (`SpotlightEffect`), and drifting digital snow (`SnowEffect`) to provide a moody, tactile texture.
-- **Sensory Progression Routing**: Maps structural design and code courses (Courses I - VI, followed by Course VII: Stack Trace and Course VIII: The Cloud) like a fine-dining menu. Users trigger interactive session handshakes ("INITIATE_PROTOCOL") which adjust visual color temperatures, ambient lighting, and backdrop layouts.
-- **Audio Synced Physics**: Interlinks with the client-side Tone.js generator to switch audio genres (e.g. Toronto's deep 600Hz underwater filters or London's grime patterns) depending on which venue nodes are active.
-
 ### Engineering Shards (`case-studies/page.tsx`)
 The architecture maps its core engineering achievements as modular, granular "shards" that act as the structural ledger of our workspace. On the Case Studies page, the **Software as Glass Monorepo** project exposes these distinct technical shards:
 
