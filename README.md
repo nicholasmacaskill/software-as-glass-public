@@ -1,121 +1,90 @@
-# Software as Glass 🧠💎
+# Software as Glass (Private Monorepo)
 
-**An institutional-grade multi-tenant architecture for unmediated intent, digital gardens, and aesthetic software engineering.**
+**The central infrastructure and unmediated viewport powering the Nicholas MacAskill digital ecosystem.**
 
-> *"Software is glass—transparent, fragile, refracting light into new forms of consciousness. The only remaining alpha is not found in depth, but in width."*
+This repository is a Next.js multi-domain monorepo serving as the foundation for several interconnected properties. It utilizes robust Host-header routing and Vercel edge capabilities to deliver distinct web experiences from a single, unified codebase, while housing proprietary automation, AI orchestration workflows, and sovereign digital engines.
 
-Software as Glass is a Next.js monorepo engineered to collapse the latency between human intent, product design, and algorithmic execution. Rather than maintaining fragmented codebases that generate cognitive entropy, this architecture serves as a single, unified operating system powering a network of distinct, high-fidelity digital properties.
+## 🌐 Architecture & Managed Domains
 
----
+The application dynamically routes traffic based on the incoming `Host` header via `vercel.json` rewrites and Next.js middleware, decoupling domains from explicit project repositories:
 
-## 🌐 The Multi-Tenant Architecture
+1. **nicholasmacaskill.com**: The Terminal / Identity Layer. Centralized orchestration root utilizing multi-agent workflows (Manager-Worker pattern).
+2. **flocanolabs.com**: Flocano Labs | Product Studio. A meta-interface for systemic clarity and high-velocity delivery pipelines.
+3. **memoirsofamultidisciplinary.com**: A digital garden mapping the intersection of design, code, and first-principles philosophy.
+4. **softwareasglass.com**: The protocol and overarching philosophical framework—collapsing the 80-tool tax into a single high-leverage operating model.
+5. **Artifact Domains**: Domain-specific routing for deployed protocols and engines (e.g., `glassmetric.com`, `betbodhi.com`, `verithra.com`).
 
-The system utilizes Host-header interception and edge-level middleware routing to serve completely separate web experiences from a single runtime. This allows for shared utility layers, global design tokens, and synchronized database clients, while preserving total brand isolation at the edge.
+## 🛠️ Comprehensive Tech Stack
 
-```
-                  ┌──────────────────────┐
-                  │   Edge Middleware    │ (Host-Header Inspection)
-                  └──────────┬───────────┘
-                             │
-         ┌───────────────────┼───────────────────┐
-         ▼                   ▼                   ▼
-┌────────────────┐  ┌────────────────┐  ┌────────────────┐
-│ nicholasmacaskill.com │  │ flocanolabs.com │  │ memoirs...     │
-│   (Portfolio & │  │ (Product &     │  │ (Digital Garden│
-│   Engineering) │  │  Venture Corp) │  │  & Philosophy) │
-└────────┬───────┘  └────────┬───────┘  └────────┬───────┘
-         │                   │                   │
-         └─────────────┬─────┴───────────────────┘
-                       ▼
-         ┌───────────────────────────┐
-         │ Shared UI & Token Engine  │ (Tailwind v4, Radix, Lucide)
-         ├───────────────────────────┤
-         │ Prisma ORM & Database L0  │ (Vercel Postgres Core)
-         └───────────────────────────┘
-```
+- **Core Framework**: Next.js 16 (App Router), React 19, TypeScript
+- **Styling & UI**: Tailwind CSS v4, Radix UI Primitives, Framer Motion (for high-fidelity micro-animations), Zustand (state management)
+- **Database & Storage**: Vercel Postgres with Prisma ORM, Supabase, SQLite (for local edge data)
+- **AI Integration**: Vercel AI SDK (`@ai-sdk/google`, `@ai-sdk/openai`) for on-demand generation and Bayesian belief updating.
+- **Authentication**: NextAuth.js
+- **Deployment**: Vercel (Edge network, cron jobs, serverless functions)
 
-### Powered Properties:
-1. **[nicholasmacaskill.com](https://nicholasmacaskill.com)**: Personal portfolio, canonical identity database, and professional engineering dossier.
-2. **[flocanolabs.com](https://flocanolabs.com)**: Flocano Labs | Product Studio. A high-leverage venture hub and software engineering firm.
-3. **[memoirsofamultidisciplinary.com](https://memoirsofamultidisciplinary.com)**: A digital sanctuary exploring the biology of software, spiritual protocols, and real-time execution telemetry.
-4. **[softwareasglass.com](https://softwareasglass.com)**: The administrative portal, refraction sitemap, and overarching philosophical portal.
+## 🏆 Case Study Wins & Sovereign Engines
 
----
+This codebase acts as the delivery pipeline for several autonomous engines and proof-of-alpha protocols. Key deployed artifacts include:
 
-## 🛡️ The System Layers
+### Bet Bodhi (betbodhi.com)
+- **Concept**: Sovereign Web3 arbitrage scanner executing on Polymarket.
+- **Architecture**: Serverless compute mesh ingesting high-frequency sports data to generate an 'Alpha Score' against on-chain crowd prices.
+- **Tech Stack**: TypeScript, Ethers.js v6, Polymarket CLOB, Node.js, Supabase.
+- **Wins**: Operates completely autonomously with high edge velocity, securing true market edge without emotional interference.
 
-The monorepo operates across two primary architectural layers designed to bridge biological capability with programmable scale:
+### Verithra (verithra.com)
+- **Concept**: The Attested Vault. A proof-of-alpha standard and liquidity layer for quant engines.
+- **Architecture**: Dual-stack. Fixed-point Noir (Aztec) circuits and zkTLS over trading history. On-chain smart vaults gate deposits on cryptographic proof thresholds. 
+- **Tech Stack**: Noir (Aztec), zkTLS, viem/ethers.js, Rust.
+- **Wins**: Verifiable edge exposure with zero IP leakage. Proof generation remains local. 
 
-### Level 0 (L0) — The Biological Substrate (The Glass Metric)
-Modern technical stacks optimize cloud infrastructure but ignore the state of the human operator. Software as Glass treats human physiology as Level 0:
-- **Biometric Gating**: State-aware integration (HRV, BPM, sleep architecture) acts as leading indicators of creative and execution capacity.
-- **The Physiology of "Tilt"**: The architecture utilizes physiological metrics to enforce system-level guardrails, dynamically scaling execution risk and throttling complexity when sympathetic-dominant spikes are detected.
-- **Statistical Séance**: Hardening the "vibe" (gut feeling) into logic by auditing biometric logs against execution outcomes to map and refine human intuition.
+### Glassmetric (glassmetric.com)
+- **Concept**: The Momentum Matrix. Unified analytics correlating biometric readiness with financial/creative output.
+- **Architecture**: A sovereign performance HUD feeding disparate streams (HRV, sleep, P&L) into a unified PostgreSQL database via Apple HealthKit.
+- **Wins**: Successfully active bio-to-finance link, turning siloed metrics into calibrated intuition across 4 performance pillars.
 
-### Level 1 (L1) — The Summoning Layer (Agentic Swarms)
-Value is no longer in writing boilerplate code or manual assets; value is in the speed of the orchestration loop:
-- **Liquid Context**: Replacing isolated files with persistent context layers, acting as a digital twin of the creator's cognition.
-- **Instant Summoning**: Transitioning from passive search queries to active agentic manifestation of code, assets, and layouts at marginal-cost-zero.
+### Bayesian Pivot (bayesianpivot.com)
+- **Concept**: Dedicated framework for recursive belief updating and noise-filtration.
+- **Tech Stack**: Python, Gemini API, Vertex AI, CCXT, yFinance.
+- **Wins**: Sub-5ms pivot latency and a 0.92 confidence score in filtering market signal from noise.
 
----
+### Flocano Labs Pipeline (flocanolabs.com)
+- **Concept**: The forge for the sovereign architect.
+- **Wins**: Reduced "tool tax" by 80% while increasing delivery velocity by 115% through unified orchestration.
 
-## 🎨 The Forged-Glass Design System
+## 🤖 Proprietary Engines & Automations
 
-The visual layout is designed to feel tactile, alive, and premium. Built on Tailwind CSS (v4) and Framer Motion, it features:
-- **Opaque Glass Panels**: Dynamic micro-interaction containers that adapt to light and dark modes with high-contrast borders.
-- **Observatory Uplink Orb**: An interactive viewport element pinned above the mobile navigation grid, representing real-time system connection.
-- **Refraction Prism**: Generative canvas and CSS particle effects (Rain, Snow, Spotlight) that dynamically map ambient conditions.
-- **Prop Firm Terminal HUD**: Pinned HUD displaying mock/real execution telemetry, featuring a custom scrollable, scrubbable equity curve and live performance tracking.
+The repository also contains internal tactical data pipelines, SEO pulse testing, and social growth automations:
+- **`agent:grow`**: Automated social interaction and growth engines.
+- **`tiktok:pivot`**: Bayesian content syndication and predictive data pipelines.
+- **`agent:boost` / `agent:pulse`**: Automated SEO monitoring and testing.
+- **Multi-channel Orchestration**: Scripts for broadcast execution and automated portfolio case-study generation.
 
----
+*(Note: These scripts run via `npx tsx` and rely on strict environment variable constraints in `.env.local` and `.env.social`.)*
 
-## ⚡ Technical Optimizations & Performance
+## ⚙️ Development Setup
 
-### 1. Cumulative Layout Shift (CLS) Stabilization
-- **The Challenge**: Multi-domain rendering and dynamic bottom navigation bars caused minor rendering offsets on mobile viewports.
-- **The Optimization**: Rebuilt the mobile bottom navigation into a standardized, CSS-grid-locked layout with predefined aspect ratios. Isolated the mobile subscribe bar to prevent vertical container pushing.
-- **The Result**: Clean **0.00 CLS** across all viewports, verified via Playwright integration testing.
+1. **Install Dependencies**: 
+   ```bash
+   npm install
+   ```
+2. **Environment Variables**:
+   Copy `.env.example` to `.env.local` and `.env.social.example` to `.env.social`. Configure database URIs, AI provider keys (OpenAI, Google), and Vercel tokens.
+3. **Database Setup**:
+   ```bash
+   npx prisma generate
+   npx prisma db push
+   ```
+4. **Run Local Server**:
+   ```bash
+   npm run dev
+   ```
+   *Note: To test specific domains locally, modify your `/etc/hosts` file or use `ngrok`.*
 
-### 2. Multi-Domain Asset Pipeline
-- Unified font architecture mapping global variables (Syne, Rajdhani, Outfit, Inter) directly to CSS roots, avoiding fallback rendering lag.
-- Asset loading and routing middleware optimized to serve pages under **120ms Edge Response Time**.
+## 🔒 OPSEC & Privacy
 
-### 3. Polymarket CLOB Gateway
-- A built-in transaction gateway monitoring market prediction networks using central limit order book (CLOB) clients.
-- Features transaction status caching, error-resilient recovery for incident logs, and event handling for outcome payouts.
-
----
-
-## ⚙️ Quick Start (Local Development)
-
-### 1. Prerequisites
-- Node.js v20+
-- PostgreSQL instance (or Vercel Postgres connection string)
-
-### 2. Install Dependencies
-```bash
-npm install
-```
-
-### 3. Database Initialization
-```bash
-npx prisma generate
-npx prisma db push
-```
-
-### 4. Run Development Server
-```bash
-npm run dev
-```
-
-To test the host-header routing locally, add the following to your `/etc/hosts` file:
-```text
-127.0.0.1 nicholasmacaskill.local
-127.0.0.1 flocanolabs.local
-127.0.0.1 memoirs.local
-```
-And navigate to `http://nicholasmacaskill.local:3000` to test domain isolation.
-
----
-
-*Software as Glass: Built for the sovereign architects who out-scale the legacy world through the sheer structural density of their unmediated intent.*
+This is the **PRIVATE** version of the codebase. 
+- Do not publicly expose the internal `social/`, `cron/`, `strategies/`, or `data/` automation scripts.
+- Ensure all API tokens and cron secrets remain securely encrypted in Vercel.
+- When creating a public fork, strip out proprietary execution logic and only share public API routes and structural UI components.
