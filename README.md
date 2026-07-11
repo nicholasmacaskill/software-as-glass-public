@@ -135,12 +135,6 @@ The "Taste Index" (curated via `/flocanolabs/taste` and `/flocanolabs/taste/[ven
 - **Sensory Progression Routing**: Maps structural design and code courses (Courses I - VI, followed by Course VII: Stack Trace and Course VIII: The Cloud) like a fine-dining menu. Users trigger interactive session handshakes ("INITIATE_PROTOCOL") which adjust visual color temperatures, ambient lighting, and backdrop layouts.
 - **Audio Synced Physics**: Interlinks with the client-side Tone.js generator to switch audio genres (e.g. Toronto's deep 600Hz underwater filters or London's grime patterns) depending on which venue nodes are active.
 
-### The Bayesian Pivot Branding Page (`/flocanolabs/artifacts/bayesian` or `bayesianpivot.com`)
-This dynamic artifact page serves as the public landing and proof-of-concept for the recursive belief-updating framework.
-- **Live Decision Mesh**: Showcases how the underlying algorithm filters market noise from signal with a target confidence score of `0.92` and a structural pivot latency floor under `5ms`.
-- **Infrastructure Auditing**: Displays live metrics (drawdown gates, ATR-swept fractals) and lists the unified Python/NumPy, Gemini, and Supabase tech stack powering the decision engine.
-- **Dynamic Schema Matching**: Generates custom breadcrumb and article metadata schemas dynamically, mapping requests straight to `bayesianpivot.com` when incoming edge traffic originates from the sovereign domain redirect.
-
 ### Engineering Shards (`case-studies/page.tsx`)
 The architecture maps its core engineering achievements as modular, granular "shards" that act as the structural ledger of our workspace. On the Case Studies page, the **Software as Glass Monorepo** project exposes these distinct technical shards:
 
