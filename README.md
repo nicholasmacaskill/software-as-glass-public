@@ -4,9 +4,9 @@
 
 > *"Software as glass—transparent, fragile, refracting light into new forms of consciousness."*
 
-This repository is the central orchestration root for the Nicholas MacAskill digital ecosystem. Built on Next.js 16, React 19, and Tailwind v4, it is an advanced, multi-domain monorepo architected not just to serve content, but to operate as a production-grade, sovereign business engine. 
+This repository is the central orchestration root for a portfolio of sovereign architectures and deployed protocols. Built on Next.js 16, React 19, and Tailwind v4, it is an advanced, multi-domain monorepo architected not just to serve content, but to operate as a production-grade business engine. 
 
-By collapsing the traditional "80-tool tax" into a unified, high-leverage operating model, this architecture powers multiple distinct brands, autonomous Web3 execution engines, and bespoke digital experiences from a single, deeply interconnected execution context.
+By collapsing the traditional "80-tool tax" into a unified, high-leverage operating model, this architecture powers multiple distinct venture brands, autonomous Web3 execution engines, and bespoke digital experiences from a single, deeply interconnected execution context.
 
 ---
 
