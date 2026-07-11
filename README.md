@@ -77,47 +77,69 @@ The Vercel Edge configuration maps domain rewrites seamlessly to internal projec
 
 ---
 
-## 🌌 II. Flocano Labs: The Glass UI & Engineering Shards
+## 🔍 II. The "Software as Glass" Thesis (Core Philosophy)
+
+The monorepo is engineered to reflect the **Software as Glass** manifesto—the pursuit of unmediated truth in software design. It is built on three core pillars:
+
+1. **The "Width" Moat (Collapsing the 80-Tool Tax)**:
+   In the era of zero-marginal-cost execution, depth is a liquid utility (programmable assets accessible via API). The only remaining competitive edge is **width**—integrating design, code, web3 protocols, and biological feedback loops into a single, cohesive geometry. Software as Glass collapses SaaS sprawl into unified, local-first viewports.
+
+2. **The Bayesian Pivot (Recursive Adaptation)**:
+   Vision is treated purely as a prior—a high-conviction guess designed to be updated dynamically based on real-world telemetry. If the system is not designed to be wrong initially, it can never be perfect eventually. SFT loops and real-time PnL/biometric updates continuously shape the execution parameters.
+
+3. **Zero-Opacity Systems**:
+   Interfaces must stop functioning as opaque black boxes that hide complexity. Instead, they act as transparent lenses (HUDs) reflecting the operator’s exact performance substrate, making the machine a direct extension of human intent.
+
+---
+
+## 🌌 III. Flocano Labs: The Glass UI & Engineering Shards
 
 The design language of Flocano Labs abandons static web patterns in favor of **Digital Physics** and a deep "glass" aesthetic. The interface is a responsive, living HUD (Heads-Up Display) that reacts to telemetry.
 
 ### The Glass Style Matrix
 The UI leverages massive computational aesthetics: `backdrop-blur-xl`, custom SVG grids, Framer Motion-based particle physics, and absolute precision typography (*Syne* + *IBM Plex Mono*). Components like `<SystemStatusCard />` act as live dashboards mapping biological and technical states into a unified view.
 
-### The GitHub Observatory (`ObservatoryClient.tsx`)
-A prime example of **Engineering as Marketing**. The Flocano Labs Observatory integrates directly with the GitHub API via Next.js Server Actions, rendering commits as a cyber-styled, pulsing HUD:
+### Real-Time GitHub Telemetry Ecosystem
+A cornerstone of the monorepo's positioning is **Engineering as Marketing**—translating live code execution and updates into a raw visual narrative. The codebase runs a three-tiered GitHub integration:
 
-```typescript
-// src/app/flocanolabs/observatory/observatory-client.tsx
-export default function ObservatoryClient() {
-    const [entries, setEntries] = useState<LogEntry[]>([]);
-    const [pulseIntensity, setPulseIntensity] = useState(1);
+1. **The Full-Screen Observatory (`ObservatoryClient.tsx`)**:
+   An immersive, terminal-themed dashboard (`/flocanolabs/observatory`) powered by a Next.js Server Action (`fetchRecentCommits`) that polls the GitHub API for pushes across all portfolio repositories.
+   ```typescript
+   // src/app/flocanolabs/observatory/observatory-client.tsx
+   // Computes background pulse scale in real-time based on today's commit velocity:
+   const intensity = 1 + Math.min(todayCount, 10) * 0.2;
+   ```
+   Renders custom glow filters and modular log layouts representing systemic events, providing users with a secure data uplink showing actual hourly production activity.
 
-    useEffect(() => {
-        const load = async () => {
-            const data = await fetchRecentCommits(); // Server Action
-            const { commits, todayCount } = data;
-            
-            // Dynamic pulse based on daily commit density
-            const intensity = 1 + Math.min(todayCount, 10) * 0.2;
-            setPulseIntensity(intensity);
-            setEntries(commits);
-        };
-        load();
-    }, []);
+2. **Planetary Live Commits Orb (`LiveCommitOrb.tsx`)**:
+   A floating planetary UI element positioned across Flocano layout frames. It initiates a background polling loop (every 60 seconds). When a new commit is detected on the repo:
+   - Triggers an expanding **frost-white activity flash** using Framer Motion (`scale: 3, opacity: 0`).
+   - Animates a glassy, rotating cloud overlay at 360 degrees as a specular-shining silver sphere.
+   - Serves as an atmospheric, low-profile click-through gateway routing users directly to the Observatory dashboard.
 
-    return (
-        <motion.div
-            animate={{
-                opacity: [0.1, 0.2 * pulseIntensity, 0.1],
-                scale: [0.8, 1, 0.8]
-            }}
-            transition={{ duration: 4 / pulseIntensity, repeat: Infinity }}
-            className="w-[40vw] h-[40vw] bg-brand-blue/10 blur-[100px] rounded-full"
-        />
-    );
-}
-```
+3. **Context-Filtered Commit Feed (`CommitFeed.tsx`)**:
+   Rendered directly on individual Case Study and Artifact detail pages (e.g. the Bet Bodhi or Verithra dashboards). It queries `/api/github-commits` but filters the results to only match the active asset:
+   ```typescript
+   // Filters commits dynamically by active project identifier while allowing core logs
+   filteredCommits = fetchedCommits.filter((commit) => {
+       const isSystem = ['core', 'local', 'system'].includes(commit.repo.toLowerCase());
+       const matchesRepo = commit.repo.toLowerCase().includes(repoFilter.toLowerCase());
+       return isSystem || matchesRepo;
+   });
+   ```
+   Exposes relative times (`10m ago`, `3d ago`), short commit hashes, and direct link-outs to GitHub commits, proving real-time engineering iterations on each specific venture.
+
+### The Taste Layer Page (`/flocanolabs/taste`)
+The "Taste Index" (curated via `/flocanolabs/taste` and `/flocanolabs/taste/[venue]`) is an interactive, highly stylistic visual temple designed to represent the studio’s sensory architecture:
+- **Atmospheric Visuals**: Built using a dynamic mix of custom grainy film overlays (`noise.svg` at 7% opacity), floating spotlight vectors (`SpotlightEffect`), and drifting digital snow (`SnowEffect`) to provide a moody, tactile texture.
+- **Sensory Progression Routing**: Maps structural design and code courses (Courses I - VI, followed by Course VII: Stack Trace and Course VIII: The Cloud) like a fine-dining menu. Users trigger interactive session handshakes ("INITIATE_PROTOCOL") which adjust visual color temperatures, ambient lighting, and backdrop layouts.
+- **Audio Synced Physics**: Interlinks with the client-side Tone.js generator to switch audio genres (e.g. Toronto's deep 600Hz underwater filters or London's grime patterns) depending on which venue nodes are active.
+
+### The Bayesian Pivot Branding Page (`/flocanolabs/artifacts/bayesian` or `bayesianpivot.com`)
+This dynamic artifact page serves as the public landing and proof-of-concept for the recursive belief-updating framework.
+- **Live Decision Mesh**: Showcases how the underlying algorithm filters market noise from signal with a target confidence score of `0.92` and a structural pivot latency floor under `5ms`.
+- **Infrastructure Auditing**: Displays live metrics (drawdown gates, ATR-swept fractals) and lists the unified Python/NumPy, Gemini, and Supabase tech stack powering the decision engine.
+- **Dynamic Schema Matching**: Generates custom breadcrumb and article metadata schemas dynamically, mapping requests straight to `bayesianpivot.com` when incoming edge traffic originates from the sovereign domain redirect.
 
 ### Engineering Shards (`case-studies/page.tsx`)
 The architecture maps its core engineering achievements as modular, granular "shards" that act as the structural ledger of our workspace. On the Case Studies page, the **Software as Glass Monorepo** project exposes these distinct technical shards:
@@ -134,7 +156,7 @@ The architecture maps its core engineering achievements as modular, granular "sh
 
 ---
 
-## 🎭 III. Memoirs: The Narrative & Taste Layer
+## 🎭 IV. Memoirs: The Narrative & Taste Layer
 
 The Memoirs project (`memoirsofamultidisciplinary.com`) serves as the artistic and philosophical mirror to the hard engineering of the repo.
 
@@ -144,13 +166,13 @@ Rather than static portfolios, Memoirs integrates live environmental, creative, 
 - **Sports Arbitrage & Odds Data Feed**: Hydrates baseball performance parameters dynamically. Polls `/memoirs/api/sports/odds` to display upcoming MLB moneyline markets filtered from Polymarket's Gamma endpoint. Simultaneously queries `/memoirs/api/sports/stats` to aggregate on-chain USDC.e volumes, cumulative ROI, and win-rate ratios computed via Gnosis Safe proxy addresses.
 - **Generative Audio Synthesis (Tone.js)**: Feeds this live price velocity into a client-side synthesizer using Tone.js, translating market movements and scroll parameters into dynamic ambient audio keynotes (chords/LPF cutoff modifiers).
 
-### Interactive Cognitive Tools
-- `<SocialOrbit />`: Visualizes the mathematical geometry of human alignment and social resonance.
-- `<PropFirmTerminal />`: A simulated terminal mapping the trader's cognitive edge, psychological "tilt" thresholds, and recovery curves.
+### Interactive Cognitive Tools & Progress Feeds
+- **`<PropFirmTerminal />` (Live Prop Firm Progress Feed)**: A highly sophisticated, floating HUD interface mapping active prop-firm accounts in real-time. It queries `/memoirs/api/btc-pnl` to pull live trade logs, total equity watermarks, and closed-trade performance metrics directly from the **TradeLocker** backend API. Features an interactive, scrubbable SVG equity-curve chart allowing the observer to audit exact historical account growth, drawdown margins, and percentage gains interactively.
+- **`<SocialOrbit />`**: Visualizes the mathematical geometry of human alignment and social resonance.
 
 ---
 
-## 🧠 IV. Advanced SEO & Answer Engine Optimization (AEO)
+## 🧠 V. Advanced SEO & Answer Engine Optimization (AEO)
 
 Discovery is engineered into the L0 root. The repo employs state-of-the-art Search Engine and Answer Engine Optimization (AEO) strategies designed explicitly for LLM ingestion (OpenAI, Perplexity, Gemini).
 
@@ -204,9 +226,42 @@ export function getNicholasIdentityGraphSchema(overrides?: Record<string, unknow
 ### Centralized Metadata Router (`buildNicholasMetadata`)
 Guarantees high-fidelity Open Graph data, canonical linking (preventing Linktree SEO cannibalization), and rich social previews across every active domain.
 
+### Host-Aware Dynamic Sitemaps (`src/app/sitemap.ts`)
+To prevent cross-domain index pollution, duplicate content penalties, and search console fragmentation, the monorepo runs an edge-aware dynamic sitemap generator. When a search crawler hits `sitemap.xml` on any domain:
+- On `nicholasmacaskill.com`: Renders only identity and portfolio pages (priority 1.0 down to 0.6).
+- On `flocanolabs.com`: Renders only product studio, case studies, and artifact routes.
+- On `memoirsofamultidisciplinary.com`: Dynamically fetches and maps individual blog entries (`BLOG_POSTS`) as indexable nodes.
+- On sovereign spoke domains (`glassmetric.com`, `betbodhi.com` etc.): Resolves only the root domain canonical location.
+This forces search engines to crawl and index content exactly under its native domain context, bypassing Next.js monorepo path leaking.
+
+### AEO (Answer Engine Optimization) Graph Schema (`src/lib/seo-config.ts`)
+Specifically engineered to feed LLM scrapers (OpenAI, Gemini, Perplexity) with structured definitions of all sovereign assets:
+- Custom semantic definitions mapped inside `SEO_CONFIG.aeo` clarify definitions for softwareasglass.com, Verithra, Bet Bodhi, BayesianPivot, GlassMetric, and Nicholas Alexander MacAskill.
+- Excludes crawlers from terminal HUD elements using custom boundary exclusions and selective indexing gates.
+- Explicitly registers a **Verified Social Media Graph** mapping 11 distinct networks (X/Twitter, GitHub, LinkedIn, Medium, Bluesky, Instagram, Threads, Telegram, TikTok, Substack, Upwork) to establish a hardened EOA cryptographic signature matrix for Nicholas MacAskill across the web.
+
 ---
 
-## 🏆 V. The Portfolio: Deployed Sovereign Engines
+## 🎨 VI. Decoupled Brand Layouts & Design Strategy
+
+The monorepo operates as a single codebase that maps multiple, distinct visual identities depending on the incoming edge routing header:
+
+### The Decoupled "About" Pages Architecture
+Rather than maintaining separate pages or duplicate files, the codebase utilizes a unified component schema (`<AboutProfile />`) that is dynamically hydrated with theme parameters at runtime:
+- **Identity Portal (`/nicholasmacaskill/about-nicholas-macaskill`)**: Renders a high-fidelity personal portal focused on experience, code archives, and chronological venture telemetry.
+- **Product Studio (`/flocanolabs/about-nicholas-macaskill`)**: Re-themes the layout into a cyber-brutalist tech studio interface, highlighting structural "Sovereign Architecture," the 80-tool tax, and agentic swarms.
+- **Narrative Mirror (`/memoirs/about-nicholas-macaskill`)**: Hydrates a grainy, minimal, serif-focused layout highlighting artistic "Refractive UI," geometric resonance, and temporal sovereignty.
+
+### Tailwind v4 Variable-Based Design Strategy (`src/app/shared-theme.css`)
+Visual consistency is enforced through a centralized Tailwind CSS v4 design token ledger. The codebase maps specific typography styles directly to brand contexts using variable overrides:
+- **`--font-orbitron`**: Used in Flocano's agentic swarm dashboards.
+- **`--font-rajdhani`**: Used in Verithra's ZK cryptographic stats tables.
+- **`--font-sovereign`**: Enforces a high-contrast serif typeface for the Memoirs narrative.
+- **`--font-sans` & `--font-mono`**: Custom font pairings (*Syne* + *IBM Plex Mono*) dynamically matched to HUD layouts to represent zero-opacity telemetry.
+
+---
+
+## 🏆 VII. The Portfolio: Deployed Sovereign Engines
 
 This monorepo serves as the backend intelligence and frontend display for several highly successful, autonomous engines:
 
@@ -233,7 +288,7 @@ This monorepo serves as the backend intelligence and frontend display for severa
 
 ---
 
-## ⚙️ VI. Developer Initialization
+## ⚙️ VIII. Developer Initialization
 
 1. **Install Dependencies**: 
    ```bash
@@ -255,7 +310,7 @@ This monorepo serves as the backend intelligence and frontend display for severa
 
 ---
 
-## 🔒 VII. OPSEC & Compliance Protocol
+## 🔒 IX. OPSEC & Compliance Protocol
 
 **Warning: PRIVATE REPOSITORY**
 - Internal automations (`social/`, `cron/`, `strategies/`, `data/`) contain proprietary execution logic and alpha. **DO NOT LEAK**.
