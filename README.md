@@ -1,90 +1,119 @@
 # Software as Glass (Private Monorepo)
+**The Master Artifact & Unmediated Viewport**
 
-**The central infrastructure and unmediated viewport powering the Nicholas MacAskill digital ecosystem.**
+> *"Software as glass—transparent, fragile, refracting light into new forms of consciousness."*
 
-This repository is a Next.js multi-domain monorepo serving as the foundation for several interconnected properties. It utilizes robust Host-header routing and Vercel edge capabilities to deliver distinct web experiences from a single, unified codebase, while housing proprietary automation, AI orchestration workflows, and sovereign digital engines.
+This repository is the central orchestration root for the Nicholas MacAskill digital ecosystem. It is architected as a Next.js multi-domain monorepo that collapses the traditional "80-tool tax" into a singular, high-leverage operating model. 
 
-## 🌐 Architecture & Managed Domains
+More than a codebase, this is a **living protocol**. It acts as an unmediated viewport, turning passive interfaces into sovereign, physics-based environments powered by continuous Bayesian updates and multi-agent AI orchestration.
 
-The application dynamically routes traffic based on the incoming `Host` header via `vercel.json` rewrites and Next.js middleware, decoupling domains from explicit project repositories:
+---
 
-1. **nicholasmacaskill.com**: The Terminal / Identity Layer. Centralized orchestration root utilizing multi-agent workflows (Manager-Worker pattern).
-2. **flocanolabs.com**: Flocano Labs | Product Studio. A meta-interface for systemic clarity and high-velocity delivery pipelines.
-3. **memoirsofamultidisciplinary.com**: A digital garden mapping the intersection of design, code, and first-principles philosophy.
-4. **softwareasglass.com**: The protocol and overarching philosophical framework—collapsing the 80-tool tax into a single high-leverage operating model.
-5. **Artifact Domains**: Domain-specific routing for deployed protocols and engines (e.g., `glassmetric.com`, `betbodhi.com`, `verithra.com`).
+## 🏛️ I. Architecture: Multi-Domain Edge Middleware
 
-## 🛠️ Comprehensive Tech Stack
+Rather than fragmenting projects across repositories, this architecture relies on a unified backend with decoupled, dynamic frontends. The core routing mechanism is handled at the edge.
 
-- **Core Framework**: Next.js 16 (App Router), React 19, TypeScript
-- **Styling & UI**: Tailwind CSS v4, Radix UI Primitives, Framer Motion (for high-fidelity micro-animations), Zustand (state management)
-- **Database & Storage**: Vercel Postgres with Prisma ORM, Supabase, SQLite (for local edge data)
-- **AI Integration**: Vercel AI SDK (`@ai-sdk/google`, `@ai-sdk/openai`) for on-demand generation and Bayesian belief updating.
-- **Authentication**: NextAuth.js
-- **Deployment**: Vercel (Edge network, cron jobs, serverless functions)
+### Host-Header Routing (`src/middleware.ts`)
+The custom Next.js middleware dynamically intercepts incoming `Host` headers to route traffic into distinct sub-projects, all sharing the same state and database execution context:
 
-## 🏆 Case Study Wins & Sovereign Engines
+- **Identity & Orchestration (`nicholasmacaskill.com`)**: Maps to `/src/projects/nicholasmacaskill`. Serves as the L0 terminal and multi-agent monitoring hub.
+- **The Forge (`flocanolabs.com`)**: Maps to `/src/projects/flocanolabs`. The meta-interface and high-velocity delivery pipeline for venture architecture.
+- **The Digital Garden (`memoirsofamultidisciplinary.com`)**: Maps to `/src/projects/memoirs`. A sovereign narrative layer rendering Markdown/MDX through custom physics components.
+- **Spoke Domains (e.g., `glassmetric.com`, `betbodhi.com`)**: Specialized artifact domains routed directly to their respective interactive components via Vercel Rewrites, while inheriting the core Flocano design system.
 
-This codebase acts as the delivery pipeline for several autonomous engines and proof-of-alpha protocols. Key deployed artifacts include:
+This design enables **absolute systemic clarity**. A change to the foundational UI primitives immediately cascades across 5+ distinct web properties with zero redundant deployment overhead.
 
-### Bet Bodhi (betbodhi.com)
-- **Concept**: Sovereign Web3 arbitrage scanner executing on Polymarket.
-- **Architecture**: Serverless compute mesh ingesting high-frequency sports data to generate an 'Alpha Score' against on-chain crowd prices.
-- **Tech Stack**: TypeScript, Ethers.js v6, Polymarket CLOB, Node.js, Supabase.
-- **Wins**: Operates completely autonomously with high edge velocity, securing true market edge without emotional interference.
+---
 
-### Verithra (verithra.com)
-- **Concept**: The Attested Vault. A proof-of-alpha standard and liquidity layer for quant engines.
-- **Architecture**: Dual-stack. Fixed-point Noir (Aztec) circuits and zkTLS over trading history. On-chain smart vaults gate deposits on cryptographic proof thresholds. 
-- **Tech Stack**: Noir (Aztec), zkTLS, viem/ethers.js, Rust.
-- **Wins**: Verifiable edge exposure with zero IP leakage. Proof generation remains local. 
+## 🌌 II. "Living" UI & Digital Physics
 
-### Glassmetric (glassmetric.com)
-- **Concept**: The Momentum Matrix. Unified analytics correlating biometric readiness with financial/creative output.
-- **Architecture**: A sovereign performance HUD feeding disparate streams (HRV, sleep, P&L) into a unified PostgreSQL database via Apple HealthKit.
-- **Wins**: Successfully active bio-to-finance link, turning siloed metrics into calibrated intuition across 4 performance pillars.
+The interface abandons traditional, static web design in favor of **Digital Physics**. It is a responsive, living environment that reacts to user intent, utilizing advanced mathematics for micro-animations.
 
-### Bayesian Pivot (bayesianpivot.com)
-- **Concept**: Dedicated framework for recursive belief updating and noise-filtration.
-- **Tech Stack**: Python, Gemini API, Vertex AI, CCXT, yFinance.
-- **Wins**: Sub-5ms pivot latency and a 0.92 confidence score in filtering market signal from noise.
+- **Physics-Based Rendering**: Components such as `<AgenticSwarm />`, `<FlyingBirds />`, and `<SymbioticWhirlpools />` utilize Framer Motion to create localized physics engines, ensuring elements feel tactile and alive.
+- **Intent-Driven UX**: Traditional passive navigation is replaced by components like `<IntentPortal />` and `<ProtocolScheduler />`. The system assumes the user is taking action (a "Protocol") rather than just browsing.
+- **Design System Matrix**: 
+  - **Frameworks**: React 19, Next.js 16 (App Router)
+  - **Styling**: Tailwind CSS v4, Radix UI Primitives
+  - **State**: Zustand for global, low-latency UI telemetry
+  - **Typography**: Bespoke integration of *Syne* and *IBM Plex Mono* to contrast structural logic with artistic fluidity.
 
-### Flocano Labs Pipeline (flocanolabs.com)
-- **Concept**: The forge for the sovereign architect.
-- **Wins**: Reduced "tool tax" by 80% while increasing delivery velocity by 115% through unified orchestration.
+---
 
-## 🤖 Proprietary Engines & Automations
+## 🧠 III. Sovereign Data & The Agentic Swarm
 
-The repository also contains internal tactical data pipelines, SEO pulse testing, and social growth automations:
-- **`agent:grow`**: Automated social interaction and growth engines.
-- **`tiktok:pivot`**: Bayesian content syndication and predictive data pipelines.
-- **`agent:boost` / `agent:pulse`**: Automated SEO monitoring and testing.
-- **Multi-channel Orchestration**: Scripts for broadcast execution and automated portfolio case-study generation.
+Beneath the UI glass lies a deeply integrated, autonomous intelligence layer designed to execute logic in the background without human intervention.
 
-*(Note: These scripts run via `npx tsx` and rely on strict environment variable constraints in `.env.local` and `.env.social`.)*
+- **Vercel AI SDK Integration**: Directly utilizes `@ai-sdk/google` and `@ai-sdk/openai` to power "Agentic Swarm" processing. Background workers process data, classify intent, and execute code generation workflows.
+- **Edge Data Fabric**: Vercel Postgres alongside Prisma ORM provide type-safe, global data synchronization. Supabase and SQLite are leveraged for edge-local fast telemetry.
+- **Proprietary Automation Pipelines**:
+  - `agent:grow`: Automated social orchestration and interaction mapping.
+  - `tiktok:pivot`: Bayesian content syndication predicting optimal engagement states.
+  - `agent:pulse`: Autonomous SEO generation and pulse testing.
 
-## ⚙️ Development Setup
+*(Note: These execution scripts remain strictly within `scripts/social` and `cron/`, bound by strict `.env.local` constraints, ensuring complete OPSEC).*
+
+---
+
+## 🏆 IV. Deployed Artifacts & Case Studies
+
+This monorepo serves as the execution layer for several highly successful, sovereign digital engines:
+
+### 1. Bet Bodhi (`betbodhi.com`)
+**Sovereign Web3 Arbitrage Engine**
+- **Architecture**: A serverless compute mesh that ingests high-frequency sports data (MLB APIs) to calculate true baseline probabilities. 
+- **Execution**: Computes an internal *Alpha Score* against the on-chain crowd prices of Polymarket (via CLOB API).
+- **Result**: High-velocity edge execution without human emotional interference. Completely autonomous trading logic.
+
+### 2. Verithra (`verithra.com`)
+**The Attested Vault (Proof-of-Alpha)**
+- **Architecture**: Dual-stack cryptography protocol. Client-side Noir (Aztec) circuits and zkTLS attest trading history (Sharpe, PnL) off-exchange.
+- **Execution**: On-chain smart vaults accept pooled USDC only against the verified cryptographic scorecard, never exposing the underlying quant blueprint.
+- **Result**: Absolute zero IP-leakage for quant developers, paired with verified liquidity access.
+
+### 3. Glassmetric (`glassmetric.com`)
+**The Momentum Matrix**
+- **Architecture**: Unified telemetry HUD that correlates biometric data (via Apple HealthKit) with financial and creative P&L. 
+- **Execution**: A Next.js/Supabase architecture feeding into a unified PostgreSQL matrix.
+- **Result**: successfully mapped a bio-finance link demonstrating that a 5% shift in biological state cascades directly into decision quality across four pillars.
+
+### 4. Bayesian Pivot (`bayesianpivot.com`)
+**High-Resolution Intuition Framework**
+- **Architecture**: Dedicated pipeline for recursive belief updating. 
+- **Execution**: Leverages Python, Gemini API, and CCXT to filter absolute market signal from noise.
+- **Result**: Reached a sub-5ms pivot latency with a 0.92 confidence score in adaptation modeling.
+
+### 5. Flocano Labs (`flocanolabs.com`)
+**The Sovereign Forge**
+- **Architecture**: The meta-interface orchestrating the entire stack.
+- **Result**: Reduced external tool dependency (the 80-tool tax) by 80% while simultaneously increasing delivery velocity by 115%.
+
+---
+
+## ⚙️ V. Developer Initialization
 
 1. **Install Dependencies**: 
    ```bash
    npm install
    ```
-2. **Environment Variables**:
-   Copy `.env.example` to `.env.local` and `.env.social.example` to `.env.social`. Configure database URIs, AI provider keys (OpenAI, Google), and Vercel tokens.
-3. **Database Setup**:
+2. **Environment Configuration**:
+   - Duplicate `.env.example` to `.env.local`.
+   - Configure Vercel Postgres endpoints, AI keys (Google/OpenAI), and NextAuth secrets.
+3. **Database Hydration**:
    ```bash
    npx prisma generate
    npx prisma db push
    ```
-4. **Run Local Server**:
+4. **Boot Sequence**:
    ```bash
    npm run dev
    ```
-   *Note: To test specific domains locally, modify your `/etc/hosts` file or use `ngrok`.*
+   *(To test distinct domains locally, modify `/etc/hosts` to point `flocanolabs.com` or `glassmetric.com` to `127.0.0.1`)*
 
-## 🔒 OPSEC & Privacy
+---
 
-This is the **PRIVATE** version of the codebase. 
-- Do not publicly expose the internal `social/`, `cron/`, `strategies/`, or `data/` automation scripts.
-- Ensure all API tokens and cron secrets remain securely encrypted in Vercel.
-- When creating a public fork, strip out proprietary execution logic and only share public API routes and structural UI components.
+## 🔒 VI. OPSEC & Compliance Protocol
+
+**Warning: PRIVATE REPOSITORY**
+- Internal automations (`social/`, `cron/`, `strategies/`, `data/`) contain proprietary execution logic and alpha. **DO NOT LEAK**.
+- All chron jobs and social tokens must remain entirely within encrypted Vercel Edge variables.
+- The public clone of this repository (`software-as-glass-public`) must only contain structural UI, layouts, and public API interfaces. Ensure internal logic is fully stripped before upstreaming public changes.
