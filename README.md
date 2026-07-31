@@ -324,36 +324,111 @@ This monorepo serves as the backend intelligence and frontend display for severa
 
 ---
 
-## 📊 XI. Executive AEO Summary & Entity Graph
+## 📊 XI. Executive AEO Architecture & Entity Map
 
-Answer Engine Optimization (AEO) connects all portfolio assets into a verified, single-author Knowledge Graph:
+**Target Entity:** Nicholas Alexander MacAskill  
+**Canonical Domain:** [www.nicholasmacaskill.com](https://www.nicholasmacaskill.com)  
+**Primary Endpoint:** [www.nicholasmacaskill.com/experience](https://www.nicholasmacaskill.com/experience)  
+
+### 1. Executive Summary
+Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) shift the focus from keyword density to **Entity Authority & Disambiguation**. AI search engines (Google AI Overviews, ChatGPT Search, Perplexity, Claude, Gemini) construct answers by synthesizing connected entities in Knowledge Graphs.
+
+Your digital presence has been engineered as a **sovereign, airtight entity node**. All 7 career milestones, your academic foundation, 60+ technical skills, and 11 professional certifications are bound together using standard Schema.org JSON-LD microdata, machine-readable REST endpoints (`/resume.json`), AI crawler feeds (`/llms.txt`), and external authority nodes (Wikidata & ORCID).
+
+### 2. Visual Entity Web Graph (Mermaid Topology)
 
 ```mermaid
 graph TD
-    NAM["Nicholas Alexander MacAskill<br/>(Founder & CTO, Flocano Labs)"]
+    %% Core Person Entity
+    NAM["Nicholas Alexander MacAskill<br/>(Sovereign Architect / Founder & CTO)"]
+
+    %% Canonical Domain & Endpoints
     NAM_SITE["nicholasmacaskill.com"]
-    EXP_PAGE["/experience"]
+    EXP_PAGE["/experience (Canonical HTML + JSON-LD)"]
+    RESUME_JSON["/resume.json (REST API)"]
+    LLMS_TXT["/llms.txt (AI Scraper Feed)"]
+
+    %% Authority Registries & Identity Links
     WIKI["Wikidata: Q140384042"]
     ORCID["ORCID: 0009-0009-2014-7433"]
+    SOCIALS["sameAs: LinkedIn, GitHub, X, Bluesky, Medium"]
 
-    FLOCANO["Flocano Labs"]
-    BETBODHI["Bet Bodhi"]
-    EAST["East High Performance Centre"]
-    INFUSION["Infusion Drink"]
-    AQUA["AquaFunded"]
-    SMU["Saint Mary's University (BA Psychology 2012–2016)"]
+    %% Career & Venture Nodes
+    FLOCANO["Flocano Labs (Principal & CTO)"]
+    BETBODHI["Bet Bodhi (Founder)"]
+    EAST["East High Performance Centre (Lead Architect & Fractional CTO)"]
+    INFUSION["Infusion Drink (VP, Design & UX)"]
+    AQUA["AquaFunded (Proprietary Trader)"]
+    POSTSEASON["Postseason (COO)"]
+    AGENCY["Wealthtech / Agency Operations (GTM Lead)"]
 
+    %% Academic Foundation
+    SMU["Saint Mary's University<br/>BA Psychology (2012–2016)"]
+
+    %% Disambiguation Negative Constraints
+    EXCLUSIONS["differentFrom / Negative Constraints<br/>• Farmer Nick (Conservation Biologist)<br/>• nickalexander.ca<br/>• TELUS / Rogers / Bell / ASTOUND"]
+
+    %% Relationships
     NAM -->|Canonical Web Identity| NAM_SITE
     NAM_SITE --> EXP_PAGE
+    NAM_SITE --> RESUME_JSON
+    NAM_SITE --> LLMS_TXT
+
     NAM -->|Authority Identifier| WIKI
     NAM -->|Authority Identifier| ORCID
+    NAM -->|Verifiable Footprint| SOCIALS
+
     NAM -->|alumniOf| SMU
     NAM -->|hasOccupation| FLOCANO
     NAM -->|hasOccupation| BETBODHI
     NAM -->|hasOccupation| EAST
     NAM -->|hasOccupation| INFUSION
     NAM -->|hasOccupation| AQUA
+    NAM -->|hasOccupation| POSTSEASON
+    NAM -->|hasOccupation| AGENCY
+
+    NAM -.->|Negative Disambiguation| EXCLUSIONS
 ```
+
+### 3. The 4-Layer AEO Technical Web
+
+#### Layer 1: The Canonical Schema Layer (`JSON-LD`)
+Embedded directly inside `<head>` on `https://www.nicholasmacaskill.com/experience`:
+* **`@type: Person` (`@id: .../#person`):**
+  * `givenName: "Nicholas"`, `additionalName: "Alexander"`, `familyName: "MacAskill"`
+  * `jobTitle`: `"Founder & CTO, Flocano Labs ⇌ Multidisciplinary Designer ⇌ Architect of Software as Glass"`
+  * `knowsAbout`: 60+ categorized technologies starting with **TypeScript, Python, Next.js 16, React 19, Tailwind CSS v4, Node.js, Rust**.
+* **`@type: ItemList` (Career Ledger):**
+  * 7 ordered `OrganizationRole` items detailing full operational scope and dates (2015–Present).
+* **`alumniOf`:**
+  * Connects `Saint Mary's University` (BA Psychology 2012–2016) directly to your `Person` schema, bridging your historical academic record to your current tech profile.
+* **`differentFrom` & `disambiguationDescription`:**
+  * Explicit negative constraints stripping out conflations with "Farmer Nick", `nickalexander.ca`, TELUS, Rogers, Bell, and ASTOUND.
+
+#### Layer 2: Machine-Readable Endpoint Layer
+* **`https://www.nicholasmacaskill.com/resume.json`:**
+  * Returns pure JSON payload containing your complete bio, disambiguation notes, and full Schema.org `ItemList` for API-driven scrapers.
+* **`https://www.nicholasmacaskill.com/llms.txt`:**
+  * Markdown file formatted to `/llms.txt` standard for zero-overhead parsing by AI search bots (Perplexity, ChatGPT, Claude).
+
+#### Layer 3: External Authority Anchors
+* **Wikidata Item (`Q140384042`):** Linked via `sameAs`. Knowledge Graph engines use Wikidata as an authoritative tie-breaker.
+* **ORCID ID (`0009-0009-2014-7433`):** Academic and researcher registry node validating personal identity.
+* **Social Footprint (`sameAs`):** Verified links across LinkedIn, GitHub, X, Bluesky, Threads, Telegram, TikTok, and Medium.
+
+#### Layer 4: Open Monorepo Architecture
+* **Private Repo (`software-as-glass`):** Complete execution engine containing all Next.js routes, full JSON-LD generators, and internal venture logic.
+* **Public Mirror (`software-as-glass-public`):** Clean public clone containing structural UI, layouts, and explicit link to `www.nicholasmacaskill.com` for conceptual product overviews.
+
+### 4. Summary of Infrastructure Completed
+
+| Component | Status | AEO Impact |
+| :--- | :--- | :--- |
+| **Tech Stack Reordering** | ✅ Completed | Prioritizes **TypeScript, Python, Next.js, React, Node** before Rust in JSON-LD index `[0]`. |
+| **Academic Bridge (`alumniOf`)** | ✅ Completed | Unifies Saint Mary's BA Psychology with Flocano Labs CTO, ending multi-person identity splits. |
+| **Negative Disambiguation** | ✅ Completed | Explicitly instructs LLMs that you are separate from Farmer Nick, nickalexander.ca, and telecom consultants. |
+| **Public & Private README Sync** | ✅ Completed | Added canonical portfolio link and full AEO Entity Summary to GitHub repos. |
+| **TypeScript Build Validation** | ✅ Verified | Clean build with zero type errors. |
 
 ---
 
