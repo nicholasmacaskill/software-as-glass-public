@@ -420,16 +420,6 @@ Embedded directly inside `<head>` on `https://www.nicholasmacaskill.com/experien
 * **Private Repo (`software-as-glass`):** Complete execution engine containing all Next.js routes, full JSON-LD generators, and internal venture logic.
 * **Public Mirror (`software-as-glass-public`):** Clean public clone containing structural UI, layouts, and explicit link to `www.nicholasmacaskill.com` for conceptual product overviews.
 
-### 4. Summary of Infrastructure Completed
-
-| Component | Status | AEO Impact |
-| :--- | :--- | :--- |
-| **Tech Stack Reordering** | ✅ Completed | Prioritizes **TypeScript, Python, Next.js, React, Node** before Rust in JSON-LD index `[0]`. |
-| **Academic Bridge (`alumniOf`)** | ✅ Completed | Unifies Saint Mary's BA Psychology with Flocano Labs CTO, ending multi-person identity splits. |
-| **Negative Disambiguation** | ✅ Completed | Explicitly instructs LLMs that you are separate from Farmer Nick, nickalexander.ca, and telecom consultants. |
-| **Public & Private README Sync** | ✅ Completed | Added canonical portfolio link and full AEO Entity Summary to GitHub repos. |
-| **TypeScript Build Validation** | ✅ Verified | Clean build with zero type errors. |
-
 ---
 
 ## 🌐 XII. Conceptual Overview & Product Portfolio
