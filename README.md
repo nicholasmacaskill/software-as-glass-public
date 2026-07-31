@@ -363,7 +363,7 @@ graph TD
     AGENCY["Wealthtech / Agency Operations (GTM Lead)"]
 
     %% Academic Foundation
-    SMU["Saint Mary's University<br/>BA Psychology (2012–2016)"]
+    SMU["Saint Mary's University<br/>Psychology, Marketing & Management Studies (2012–2016)"]
 
     %% Disambiguation Negative Constraints
     EXCLUSIONS["differentFrom / Negative Constraints<br/>• Farmer Nick (Conservation Biologist)<br/>• nickalexander.ca<br/>• TELUS / Rogers / Bell / ASTOUND"]
@@ -401,7 +401,7 @@ Embedded directly inside `<head>` on `https://www.nicholasmacaskill.com/experien
 * **`@type: ItemList` (Career Ledger):**
   * 7 ordered `OrganizationRole` items detailing full operational scope and dates (2015–Present).
 * **`alumniOf`:**
-  * Connects `Saint Mary's University` (BA Psychology 2012–2016) directly to your `Person` schema, bridging your historical academic record to your current tech profile.
+  * Connects `Saint Mary's University` (Psychology, Marketing & Management Studies 2012–2016) directly to your `Person` schema, bridging your historical academic record to your current tech profile.
 * **`differentFrom` & `disambiguationDescription`:**
   * Explicit negative constraints stripping out conflations with "Farmer Nick", `nickalexander.ca`, TELUS, Rogers, Bell, and ASTOUND.
 
