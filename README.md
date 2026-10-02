@@ -9,6 +9,74 @@ By collapsing traditional SaaS sprawl into a unified, high-leverage operating mo
 
 ---
 
+## 🏛️ Sovereign Engineering Dossiers & Architectural Lineage (10 Production Slides)
+
+> **Architect & Founder:** [Nicholas Alexander MacAskill](https://nicholasmacaskill.com)  
+> **Entity Root:** [Flocano Labs](https://flocanolabs.com) ⇌ [Software as Glass](https://softwareasglass.com)  
+> **Verified Archive:** [11 Research Monographs & 58 Technical Shards](https://flocanolabs.com/case-studies)  
+> **Format:** 4:5 Portrait // Void Black (`#000000`) // Dossier Cyan (`#38bdf8`) & Invariant Emerald (`#34d399`)
+
+### Technical Slide Index & Verification Ledger
+
+| Slide | Dossier Code | Protocol | Title | Key Invariant / Telemetry | Verified Canonical URL |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **01** | `CANONICAL-ENTITY-01` | **Flocano Labs** | **Nicholas Alexander MacAskill** | Founder & CTO, Flocano Labs ⇌ Software as Glass // 3 Protocols · 58 Shards | [`nicholasmacaskill.com`](https://nicholasmacaskill.com) |
+| **02** | `DOSSIER-PBA-01` | **Bet Bodhi** | **Praxical Breakdown Architecture** | F-03 WR: 45.2% (+171% Edge) // Relay: < 2.8s | [`flocanolabs.com/dossier/bodhi-praxical-breakdown-architecture`](https://flocanolabs.com/dossier/bodhi-praxical-breakdown-architecture) |
+| **03** | `DOSSIER-TOM-01` | **BayesianPivot** | **Phenomenological Deep Learning** | Tape: < 0.2ms // Inference: MLX 4-bit LoRA On-Chip | [`flocanolabs.com/dossier/phenomenological-deep-learning-epistemic-tom`](https://flocanolabs.com/dossier/phenomenological-deep-learning-epistemic-tom) |
+| **04** | `DOSSIER-3DCM-01` | **BayesianPivot** | **Tri-Axial Invariant Crucible** | 100.0% Mutant Kill Rate // 53/53 Invariants Passed | [`flocanolabs.com/dossier/tri-axial-invariant-crucible`](https://flocanolabs.com/dossier/tri-axial-invariant-crucible) |
+| **05** | `DOSSIER-SARG-01` | **Software as Glass** | **Agentic Runtime Governor (SARG-01)** | Swap Drag: -97.6% // Display Plane: 120 FPS Locked | [`flocanolabs.com/dossier/sovereign-agentic-runtime-governor`](https://flocanolabs.com/dossier/sovereign-agentic-runtime-governor) |
+| **06** | `DOSSIER-SLM-01` | **BayesianPivot** | **Continuous Expectancy SLM** | Validation Loss: 0.059 (-96.9%) // Latency: 450ms | [`flocanolabs.com/dossier/continuous-expectancy-slm-orderflow-matrix`](https://flocanolabs.com/dossier/continuous-expectancy-slm-orderflow-matrix) |
+| **07** | `DOSSIER-DD-01` | **BayesianPivot** | **Deep Darwin Systems Architecture** | Mach Memory Governance // Cold P-Core Sandboxing | [`flocanolabs.com/dossier/deep-darwin-systems-architecture-real-time-ai-agents`](https://flocanolabs.com/dossier/deep-darwin-systems-architecture-real-time-ai-agents) |
+| **08** | `DOSSIER-BP-09` | **BayesianPivot** | **Bayesian Invariance Mesh** | Spatial Density Tensors // 35,420 Scans Filtered | [`flocanolabs.com/dossier/bayesianpivot-execution-ledger`](https://flocanolabs.com/dossier/bayesianpivot-execution-ledger) |
+| **09** | `DOSSIER-DMACP-07` | **BayesianPivot** | **DMACP-07 Refractive Consensus** | 3/3 Swarm Quorum // Latency: < 18ms Multi-Agent | [`flocanolabs.com/dossier/bp-dmacp-07-refractive-consensus`](https://flocanolabs.com/dossier/bp-dmacp-07-refractive-consensus) |
+| **10** | `ENGINEERING-NEXUS-01` | **Flocano Labs** | **The Sovereign Archive** | 11 Monographs // 58 Edge Shards // Interdisciplinary Moat | [`flocanolabs.com/case-studies`](https://flocanolabs.com/case-studies) |
+
+---
+
+### Master Slide Showcase
+
+<p align="center">
+  <img src="assets/dossiers/slide-01-canonical-entity-01.png" alt="Slide 01 — Nicholas Alexander MacAskill — Sovereign Systems Architect & Founder, Flocano Labs" width="720" />
+</p>
+
+<p align="center">
+  <img src="assets/dossiers/slide-02-dossier-pba-01.png" alt="Slide 02 — Bet Bodhi — Praxical Breakdown Architecture (Dossier PBA-01)" width="720" />
+</p>
+
+<p align="center">
+  <img src="assets/dossiers/slide-03-dossier-tom-01.png" alt="Slide 03 — BayesianPivot — Phenomenological Deep Learning (Dossier TOM-01)" width="720" />
+</p>
+
+<p align="center">
+  <img src="assets/dossiers/slide-04-dossier-3dcm-01.png" alt="Slide 04 — BayesianPivot — Tri-Axial Invariant Crucible (Dossier 3DCM-01)" width="720" />
+</p>
+
+<p align="center">
+  <img src="assets/dossiers/slide-05-dossier-sarg-01.png" alt="Slide 05 — Software as Glass — Sovereign Agentic Runtime Governor (SARG-01)" width="720" />
+</p>
+
+<p align="center">
+  <img src="assets/dossiers/slide-06-dossier-slm-01.png" alt="Slide 06 — BayesianPivot — Continuous Expectancy SLM (Dossier SLM-01)" width="720" />
+</p>
+
+<p align="center">
+  <img src="assets/dossiers/slide-07-dossier-dd-01.png" alt="Slide 07 — BayesianPivot — Deep Darwin Systems Architecture (Dossier DD-01)" width="720" />
+</p>
+
+<p align="center">
+  <img src="assets/dossiers/slide-08-dossier-bp-09.png" alt="Slide 08 — BayesianPivot — Bayesian Invariance Mesh (Dossier BP-09)" width="720" />
+</p>
+
+<p align="center">
+  <img src="assets/dossiers/slide-09-dossier-dmacp-07.png" alt="Slide 09 — BayesianPivot — DMACP-07 Refractive Consensus Protocol" width="720" />
+</p>
+
+<p align="center">
+  <img src="assets/dossiers/slide-10-engineering-nexus-01.png" alt="Slide 10 — Flocano Labs — The Sovereign Archive (11 Monographs & 58 Shards)" width="720" />
+</p>
+
+---
+
 ## 🏛️ I. Edge Routing & Multi-Domain Architecture
 
 This codebase acts as a centralized CI/CD and telemetry hub while serving radically different front-ends. Rather than fragmenting projects across isolated repositories with disjointed CI/CD pipelines, traffic is dynamically parsed at the edge.
