@@ -13,7 +13,7 @@ By collapsing traditional SaaS sprawl into a unified, high-leverage operating mo
 
 > **Architect & Founder:** [Nicholas Alexander MacAskill](https://nicholasmacaskill.com)  
 > **Entity Root:** [Flocano Labs](https://flocanolabs.com) ⇌ [Software as Glass](https://softwareasglass.com)  
-> **Verified Archive:** [11 Research Monographs & 58 Technical Shards](https://flocanolabs.com/case-studies)  
+> **Verified Archive:** [12 Research Monographs & 59 Technical Shards](https://flocanolabs.com/case-studies)  
 > **Format:** 4:5 Portrait // Void Black (`#000000`) // Dossier Cyan (`#38bdf8`) & Invariant Emerald (`#34d399`)
 
 ### Technical Slide Index & Verification Ledger
@@ -29,7 +29,10 @@ By collapsing traditional SaaS sprawl into a unified, high-leverage operating mo
 | **07** | `DOSSIER-DD-01` | **BayesianPivot** | **Deep Darwin Systems Architecture** | Mach Memory Governance // Cold P-Core Sandboxing | [`flocanolabs.com/dossier/deep-darwin-systems-architecture-real-time-ai-agents`](https://flocanolabs.com/dossier/deep-darwin-systems-architecture-real-time-ai-agents) |
 | **08** | `DOSSIER-BP-09` | **BayesianPivot** | **Bayesian Invariance Mesh** | Spatial Density Tensors // 35,420 Scans Filtered | [`flocanolabs.com/dossier/bayesianpivot-execution-ledger`](https://flocanolabs.com/dossier/bayesianpivot-execution-ledger) |
 | **09** | `DOSSIER-DMACP-07` | **BayesianPivot** | **DMACP-07 Refractive Consensus** | 3/3 Swarm Quorum // Latency: < 18ms Multi-Agent | [`flocanolabs.com/dossier/bp-dmacp-07-refractive-consensus`](https://flocanolabs.com/dossier/bp-dmacp-07-refractive-consensus) |
-| **10** | `ENGINEERING-NEXUS-01` | **Flocano Labs** | **The Sovereign Archive** | 11 Monographs // 58 Edge Shards // Interdisciplinary Moat | [`flocanolabs.com/case-studies`](https://flocanolabs.com/case-studies) |
+| **10** | `DOSSIER-HAIP-01` | **East High Performance Centre** | **Human-Gated Agentic Invariant Protocol** | 35/35 Invariants Clean // 140x Faster Resolution (15m vs 3d) // Zero Data Loss | [`nicholasmacaskill.com/dossier/human-gated-agentic-invariant-protocol`](https://www.nicholasmacaskill.com/dossier/human-gated-agentic-invariant-protocol) |
+| **11** | `DOSSIER-ETN-01` | **BayesianPivot** | **Continuous Epistemic Tensor Networks** | Inference: 0.68ms Metal (-5146x) // 78.6% Win Rate // Ruin-Weighted Loss | [`nicholasmacaskill.com/dossier/continuous-epistemic-tensor-networks-asymmetric-ruin-corridor`](https://www.nicholasmacaskill.com/dossier/continuous-epistemic-tensor-networks-asymmetric-ruin-corridor) |
+| **12** | `DOSSIER-ADSR-01` | **BayesianPivot** | **Autonomous Decentralized Settlement Rail** | Hot-Path: < 360ms // +192.6R (BTC/ETH) // Zero-Login Ed25519 Signing | [`nicholasmacaskill.com/dossier/autonomous-decentralized-settlement-rail`](https://www.nicholasmacaskill.com/dossier/autonomous-decentralized-settlement-rail) |
+| **13** | `ENGINEERING-NEXUS-01` | **Flocano Labs** | **The Sovereign Archive** | 12 Monographs // 59 Edge Shards // Interdisciplinary Moat | [`flocanolabs.com/case-studies`](https://flocanolabs.com/case-studies) |
 
 ---
 
