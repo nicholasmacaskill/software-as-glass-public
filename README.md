@@ -462,3 +462,7 @@ The unified monorepo will mount on `http://localhost:3000`. Edge middleware hand
 * **Institutional Archive:** [https://flocanolabs.com/case-studies](https://flocanolabs.com/case-studies)
 * **Primary Repository:** [https://github.com/nicholasmacaskill/software-as-glass](https://github.com/nicholasmacaskill/software-as-glass)
 * **Public Architecture Repository:** [https://github.com/nicholasmacaskill/software-as-glass-public](https://github.com/nicholasmacaskill/software-as-glass-public)
+
+---
+
+*All rights reserved Flocano Labs LLC USA.*
