@@ -7,7 +7,7 @@
 > **Creator:** Nicholas Alexander MacAskill (@nicholasmacaskill) — [https://nicholasmacaskill.com](https://nicholasmacaskill.com)  
 > **Organization:** [Flocano Labs](https://flocanolabs.com) (Sovereign R&D Forge)  
 > **Classification:** `sovereign_system` &nbsp;|&nbsp; **sys_id:** `FL-SAG-01` &nbsp;|&nbsp; **Type:** Multi-Domain Edge Monorepo / Post-Tool Operating System  
-> **Status:** Production — 226 statically generated routes, 59 engineering shards, 12 research monographs  
+> **Status:** Production — 226 statically generated routes, 60 engineering shards, 17 research monographs  
 > **Framework:** Next.js 16 (App Router) | React 19 | Tailwind CSS v4  
 > **Platform:** Apple Silicon (Darwin Mach QoS / Metal Performance Shaders) | **Cloud Footprint:** $0.00/mo  
 > **License:** MIT
@@ -88,30 +88,36 @@ The following ground-truth metrics are verified across 226 production routes and
 
 ---
 
-## 🏛️ Sovereign Engineering Dossiers & Architectural Lineage (10 Production Slides)
+## 🏛️ Sovereign Engineering Dossiers & Architectural Lineage (17 Production Monographs)
 
 > **Architect & Founder:** [Nicholas Alexander MacAskill](https://nicholasmacaskill.com)  
 > **Entity Root:** [Flocano Labs](https://flocanolabs.com) ⇌ [Software as Glass](https://softwareasglass.com)  
-> **Verified Archive:** [12 Research Monographs & 59 Technical Shards](https://flocanolabs.com/case-studies)  
+> **Verified Archive:** [17 Research Monographs & 60 Technical Shards](https://flocanolabs.com/case-studies)  
 > **Format:** 4:5 Portrait // Void Black (`#000000`) // Dossier Cyan (`#38bdf8`) & Invariant Emerald (`#34d399`)
 
 ### Technical Slide Index & Verification Ledger
 
-| Slide | Dossier Code | Protocol | Title | Key Invariant / Telemetry | Verified Canonical URL |
+| Slide | Dossier Code | Venture / Protocol | Title | Key Invariant / Telemetry | Verified Canonical URL |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **01** | `CANONICAL-ENTITY-01` | **Flocano Labs** | **Nicholas Alexander MacAskill** | Founder & CTO, Flocano Labs ⇌ Software as Glass // 3 Protocols · 58 Shards | [`nicholasmacaskill.com`](https://nicholasmacaskill.com) |
-| **02** | `DOSSIER-PBA-01` | **Bet Bodhi** | **Praxical Breakdown Architecture** | F-03 WR: 45.2% (+171% Edge) // Relay: < 2.8s | [`flocanolabs.com/dossier/bodhi-praxical-breakdown-architecture`](https://flocanolabs.com/dossier/bodhi-praxical-breakdown-architecture) |
-| **03** | `DOSSIER-TOM-01` | **BayesianPivot** | **Phenomenological Deep Learning** | Tape: < 0.2ms // Inference: MLX 4-bit LoRA On-Chip | [`flocanolabs.com/dossier/phenomenological-deep-learning-epistemic-tom`](https://flocanolabs.com/dossier/phenomenological-deep-learning-epistemic-tom) |
-| **04** | `DOSSIER-3DCM-01` | **BayesianPivot** | **Tri-Axial Invariant Crucible** | 100.0% Mutant Kill Rate // 53/53 Invariants Passed | [`flocanolabs.com/dossier/tri-axial-invariant-crucible`](https://flocanolabs.com/dossier/tri-axial-invariant-crucible) |
-| **05** | `DOSSIER-SARG-01` | **Software as Glass** | **Agentic Runtime Governor (SARG-01)** | Swap Drag: -97.6% // Display Plane: 120 FPS Locked | [`flocanolabs.com/dossier/sovereign-agentic-runtime-governor`](https://flocanolabs.com/dossier/sovereign-agentic-runtime-governor) |
-| **06** | `DOSSIER-SLM-01` | **BayesianPivot** | **Continuous Expectancy SLM** | Validation Loss: 0.059 (-96.9%) // Latency: 450ms | [`flocanolabs.com/dossier/continuous-expectancy-slm-orderflow-matrix`](https://flocanolabs.com/dossier/continuous-expectancy-slm-orderflow-matrix) |
-| **07** | `DOSSIER-DD-01` | **BayesianPivot** | **Deep Darwin Systems Architecture** | Mach Memory Governance // Cold P-Core Sandboxing | [`flocanolabs.com/dossier/deep-darwin-systems-architecture-real-time-ai-agents`](https://flocanolabs.com/dossier/deep-darwin-systems-architecture-real-time-ai-agents) |
-| **08** | `DOSSIER-BP-09` | **BayesianPivot** | **Bayesian Invariance Mesh** | Spatial Density Tensors // 35,420 Scans Filtered | [`flocanolabs.com/dossier/bayesianpivot-execution-ledger`](https://flocanolabs.com/dossier/bayesianpivot-execution-ledger) |
-| **09** | `DOSSIER-DMACP-07` | **BayesianPivot** | **DMACP-07 Refractive Consensus** | 3/3 Swarm Quorum // Latency: < 18ms Multi-Agent | [`flocanolabs.com/dossier/bp-dmacp-07-refractive-consensus`](https://flocanolabs.com/dossier/bp-dmacp-07-refractive-consensus) |
-| **10** | `DOSSIER-HAIP-01` | **East High Performance Centre** | **Human-Gated Agentic Invariant Protocol** | 35/35 Invariants Clean // 140x Faster Resolution (15m vs 3d) // Zero Data Loss | [`nicholasmacaskill.com/dossier/human-gated-agentic-invariant-protocol`](https://www.nicholasmacaskill.com/dossier/human-gated-agentic-invariant-protocol) |
-| **11** | `DOSSIER-ETN-01` | **BayesianPivot** | **Continuous Epistemic Tensor Networks** | Inference: 0.68ms Metal (-5146x) // 78.6% Win Rate // Ruin-Weighted Loss | [`nicholasmacaskill.com/dossier/continuous-epistemic-tensor-networks-asymmetric-ruin-corridor`](https://www.nicholasmacaskill.com/dossier/continuous-epistemic-tensor-networks-asymmetric-ruin-corridor) |
-| **12** | `DOSSIER-ADSR-01` | **BayesianPivot** | **Autonomous Decentralized Settlement Rail** | Hot-Path: < 360ms // +192.6R (BTC/ETH) // Zero-Login Ed25519 Signing | [`nicholasmacaskill.com/dossier/autonomous-decentralized-settlement-rail`](https://www.nicholasmacaskill.com/dossier/autonomous-decentralized-settlement-rail) |
-| **13** | `ENGINEERING-NEXUS-01` | **Flocano Labs** | **The Sovereign Archive** | 12 Monographs // 59 Edge Shards // Interdisciplinary Moat | [`flocanolabs.com/case-studies`](https://flocanolabs.com/case-studies) |
+| **01** | `CANONICAL-ENTITY-01` | **Flocano Labs** | **Nicholas Alexander MacAskill** | Founder & CTO, Flocano Labs ⇌ Software as Glass // 6 Protocols · 60 Shards | [`nicholasmacaskill.com`](https://nicholasmacaskill.com) |
+| **02** | `DOSSIER-FSFC-01` | **BayesianPivot** | **Finite-Sample Fractal Calibration** | +0.121 Shift // 62.0% Fleet WR // 92.9% London Open (+12.41R, 152.4 PF) | [`flocanolabs.com/dossier/finite-sample-fractal-calibration`](https://flocanolabs.com/dossier/finite-sample-fractal-calibration) |
+| **03** | `DOSSIER-SOCB-01` | **BayesianPivot** | **Session Opportunity Capacity Bounds** | 12,057 Vetoed Setups // 7,322R Capital Defended // 60.7% Loss Interception | [`flocanolabs.com/dossier/session-opportunity-capacity-bounds`](https://flocanolabs.com/dossier/session-opportunity-capacity-bounds) |
+| **04** | `DOSSIER-RDTLR-01` | **BayesianPivot** | **Thermodynamic Liquidity Routing** | 1,421 Continuous Bars // 50.11% Regime Split // 14-Tier Invariant Crucible | [`flocanolabs.com/dossier/regime-driven-thermodynamic-liquidity-routing`](https://flocanolabs.com/dossier/regime-driven-thermodynamic-liquidity-routing) |
+| **05** | `DOSSIER-ETN-01` | **BayesianPivot** | **Continuous Epistemic Tensor Networks** | Inference: 0.68ms Metal (-5146x) // 78.6% Win Rate // Ruin-Weighted Loss | [`nicholasmacaskill.com/dossier/continuous-epistemic-tensor-networks-asymmetric-ruin-corridor`](https://www.nicholasmacaskill.com/dossier/continuous-epistemic-tensor-networks-asymmetric-ruin-corridor) |
+| **06** | `DOSSIER-ADSR-01` | **BayesianPivot** | **Autonomous Decentralized Settlement Rail** | Hot-Path: < 360ms // +192.6R (BTC/ETH) // Zero-Login Ed25519 Signing | [`nicholasmacaskill.com/dossier/autonomous-decentralized-settlement-rail`](https://www.nicholasmacaskill.com/dossier/autonomous-decentralized-settlement-rail) |
+| **07** | `DOSSIER-TOM-01` | **BayesianPivot** | **Phenomenological Deep Learning** | Tape: < 0.2ms // Inference: MLX 4-bit LoRA On-Chip // Epistemic ToM | [`flocanolabs.com/dossier/phenomenological-deep-learning-epistemic-tom`](https://flocanolabs.com/dossier/phenomenological-deep-learning-epistemic-tom) |
+| **08** | `DOSSIER-3DCM-01` | **BayesianPivot** | **Tri-Axial Invariant Crucible** | 100.0% Mutant Kill Rate // 153/153 Invariants Passed (13.99s) | [`flocanolabs.com/dossier/tri-axial-invariant-crucible`](https://flocanolabs.com/dossier/tri-axial-invariant-crucible) |
+| **09** | `DOSSIER-SLM-01` | **BayesianPivot** | **Continuous Expectancy SLM** | Validation Loss: 0.059 (-96.9%) // Latency: 450ms // Ruin-Weighted | [`flocanolabs.com/dossier/continuous-expectancy-slm-orderflow-matrix`](https://flocanolabs.com/dossier/continuous-expectancy-slm-orderflow-matrix) |
+| **10** | `DOSSIER-DD-01` | **BayesianPivot** | **Deep Darwin Systems Architecture** | Mach Memory Governance // Cold P-Core Sandboxing // Sub-0.20ms | [`flocanolabs.com/dossier/deep-darwin-systems-architecture-real-time-ai-agents`](https://flocanolabs.com/dossier/deep-darwin-systems-architecture-real-time-ai-agents) |
+| **11** | `DOSSIER-PBA-01` | **Bet Bodhi** | **Praxical Breakdown Architecture** | F-03 WR: 45.2% (+171% Edge) // Relay: < 2.8s // Non-Custodial Arbitrage | [`flocanolabs.com/dossier/bodhi-praxical-breakdown-architecture`](https://flocanolabs.com/dossier/bodhi-praxical-breakdown-architecture) |
+| **12** | `DOSSIER-VRT-01` | **Verithra** | **ZK Performance Attestation** | Non-Interactive ZK Proofs // Trustless Allocator Verification Rail | [`flocanolabs.com/dossier/verithra-zk-performance-attestation`](https://flocanolabs.com/dossier/verithra-zk-performance-attestation) |
+| **13** | `DOSSIER-WAL-01` | **GlassMetric** | **POSIX SQLite WAL Telemetry** | Sub-0.12ms Local Logging // 0 Active Swap // Darwin Mach QoS Governance | [`flocanolabs.com/dossier/glassmetric-sqlite-wal-telemetry`](https://flocanolabs.com/dossier/glassmetric-sqlite-wal-telemetry) |
+| **14** | `DOSSIER-GLS-01` | **GlassMetric** | **Epistemic Ledger // Bio-State** | Deterministic Somatic Decompilation // 77 Epistemic Entries | [`flocanolabs.com/dossier/glassmetric-epistemic-ledger-inner-child-reconciliation`](https://flocanolabs.com/dossier/glassmetric-epistemic-ledger-inner-child-reconciliation) |
+| **15** | `DOSSIER-HAIP-01` | **East High Performance Centre** | **Human-Gated Invariant Protocol** | 35/35 Invariants Clean // 140x Faster Resolution // Zero Data Loss | [`nicholasmacaskill.com/dossier/human-gated-agentic-invariant-protocol`](https://www.nicholasmacaskill.com/dossier/human-gated-agentic-invariant-protocol) |
+| **16** | `DOSSIER-EHPC-01` | **East High Performance Centre** | **Database-Level Zero-Trust RLS** | Multi-Tenant RLS // Zero Leakage Across 2,400+ Profiles // Async Wallets | [`nicholasmacaskill.com/dossier/ehpc-rbac-rls`](https://nicholasmacaskill.com/dossier/ehpc-rbac-rls) |
+| **17** | `DOSSIER-SARG-01` | **Software as Glass** | **Sovereign Runtime Governor (SARG)** | Swap Drag: -97.6% // Display Plane: 120 FPS Locked // Darwin Mach | [`flocanolabs.com/dossier/sovereign-agentic-runtime-governor`](https://flocanolabs.com/dossier/sovereign-agentic-runtime-governor) |
+| **18** | `DOSSIER-VEL-01` | **Software as Glass** | **The 10x Velocity Illusion** | O(1) Coordination Tax // Post-Tool UI // Zero Cloud Overhead | [`flocanolabs.com/dossier/velocity-illusion`](https://flocanolabs.com/dossier/velocity-illusion) |
+| **19** | `ENGINEERING-NEXUS-01` | **Flocano Labs** | **The Sovereign Archive** | 17 Monographs // 60 Edge Shards // Interdisciplinary Moat | [`flocanolabs.com/case-studies`](https://flocanolabs.com/case-studies) |
 
 ---
 
