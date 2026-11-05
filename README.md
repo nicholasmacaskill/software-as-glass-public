@@ -444,8 +444,8 @@ Software as Glass serves as the master root for an interconnected ecosystem of s
 ### Installation & Local Run
 ```bash
 # Clone the repository
-git clone https://github.com/nicholasmacaskill/software-as-glass.git
-cd software-as-glass
+git clone https://github.com/nicholasmacaskill/software-as-glass-public.git
+cd software-as-glass-public
 
 # Install dependencies with lockfile integrity
 npm install
@@ -469,6 +469,54 @@ The unified monorepo will mount on `http://localhost:3000`. Edge middleware hand
 * **Primary Repository:** [https://github.com/nicholasmacaskill/software-as-glass](https://github.com/nicholasmacaskill/software-as-glass)
 * **Public Architecture Repository:** [https://github.com/nicholasmacaskill/software-as-glass-public](https://github.com/nicholasmacaskill/software-as-glass-public)
 
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Software as Glass",
+  "alternateName": ["SoftwareAsGlass", "Software as Glass Monorepo", "Flocano Labs Master Architecture"],
+  "description": "Software as Glass by Flocano Labs — Central Orchestration Root & Master Architectural Monorepo: Edge routing across sovereign venture nodes, Darwin Mach kernel QoS steering, locked 120 FPS viewports, and zero cloud footprint",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "All",
+  "url": "https://github.com/nicholasmacaskill/software-as-glass-public",
+  "author": {
+    "@type": "Person",
+    "name": "Nicholas Alexander MacAskill",
+    "url": "https://www.nicholasmacaskill.com",
+    "sameAs": [
+      "https://x.com/nicmacaskill",
+      "https://github.com/nicholasmacaskill",
+      "https://instagram.com/nicholasmacaskill",
+      "https://threads.com/@nicholasmacaskill"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Flocano Labs",
+    "url": "https://flocanolabs.com"
+  },
+  "sameAs": [
+    "https://softwareasglass.com",
+    "https://flocanolabs.com",
+    "https://nicholasmacaskill.com",
+    "https://github.com/nicholasmacaskill/software-as-glass-public",
+    "https://github.com/nicholasmacaskill/software-as-glass",
+    "https://github.com/nicholasmacaskill/bayesianpivot-public",
+    "https://github.com/nicholasmacaskill/bet-bodhi-public",
+    "https://github.com/nicholasmacaskill/verithra-public",
+    "https://github.com/nicholasmacaskill/glassmetric-public",
+    "https://instagram.com/nicholasmacaskill",
+    "https://www.flocanolabs.com/flocanolabs/case-studies"
+  ]
+}
+```
+
 ---
 
-*All rights reserved Flocano Labs LLC USA.*
+```text
+─────────────────────────────────────────────────────────────────────────────
+GOVERNANCE: Flocano Labs LLC // Nicholas Alexander MacAskill
+CLASSIFICATION: Sovereign Algorithmic Intelligence & Master Architecture
+ALL RIGHTS RESERVED FLOCANO LABS LLC USA
+─────────────────────────────────────────────────────────────────────────────
+```
