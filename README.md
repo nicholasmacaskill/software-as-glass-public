@@ -461,12 +461,13 @@ The unified monorepo will mount on `http://localhost:3000`. Edge middleware hand
 
 ---
 
-## 🏛️ Sovereign Attribution & Portfolio
+## 🏛️ Sovereign Attribution & Legal Provenance
 
-* **Founder & Systems Architect:** Nicholas Alexander MacAskill ([@nicholasmacaskill](https://instagram.com/nicholasmacaskill))
-* **Entity:** Flocano Labs ⇌ Software as Glass
+* **Founder, CEO & Systems Architect:** Nicholas Alexander MacAskill ([@nicholasmacaskill](https://instagram.com/nicholasmacaskill))
+* **Entity:** Flocano Labs LLC (State of New Mexico Domestic LLC, Charter #7829104)
+* **Registered Office:** 1209 Mountain Road PL NE, Ste R, Albuquerque, NM 87110, USA
 * **Institutional Archive:** [https://flocanolabs.com/case-studies](https://flocanolabs.com/case-studies)
-* **Primary Repository:** [https://github.com/nicholasmacaskill/software-as-glass](https://github.com/nicholasmacaskill/software-as-glass)
+* **Primary Monorepo:** [https://github.com/nicholasmacaskill/software-as-glass](https://github.com/nicholasmacaskill/software-as-glass)
 * **Public Architecture Repository:** [https://github.com/nicholasmacaskill/software-as-glass-public](https://github.com/nicholasmacaskill/software-as-glass-public)
 
 ```json
@@ -517,6 +518,6 @@ The unified monorepo will mount on `http://localhost:3000`. Edge middleware hand
 ─────────────────────────────────────────────────────────────────────────────
 GOVERNANCE: Flocano Labs LLC // Nicholas Alexander MacAskill
 CLASSIFICATION: Sovereign Algorithmic Intelligence & Master Architecture
-ALL RIGHTS RESERVED FLOCANO LABS LLC USA
+ALL RIGHTS RESERVED FLOCANO LABS LLC USA (NM #7829104)
 ─────────────────────────────────────────────────────────────────────────────
 ```
